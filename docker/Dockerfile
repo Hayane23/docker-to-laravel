@@ -1,9 +1,9 @@
-FROM php:7.3-apache
+FROM php:8-apache
 
 USER root
 
-ARG project=projectname
-ARG user=projectname
+ARG project=projectname-app
+ARG user=projectname-app
 ARG uid=1000
 
 RUN apt-get update && apt-get install -y \
